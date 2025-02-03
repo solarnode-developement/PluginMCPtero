@@ -61,7 +61,7 @@ async function startinstall(transaction, name, theme) {
         process.stdout.write(`Get installation program of ${name} (This can take some seconds) ${P[x++]}`);
         x %= P.length;
     }, 250);
-    const req = axios.get(`https://api.bagou450.com/index.php/api/client/pterodactyl/getautoinstaller?id=${transaction}&selectaddon=${name}`).then(async res => {
+    const req = axios.get(`https://api.bagou450.com/index.php/api/client/pterodactyl/getautoinstaller?id=${transaction}&selectaddon=326`).then(async res => {
         clearInterval(loader)
         process.stdout.clearLine(0);
         process.stdout.cursorTo(0);
